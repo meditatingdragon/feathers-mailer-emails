@@ -1,4 +1,7 @@
 module.exports = function (app) {
+  const pug = require('pug');
+  const path = require('path');
+
   function getLink(type, hash) {
     const url = app.get('client_url') + '/' + type + '?token=' + hash;
     return url;
@@ -45,16 +48,23 @@ module.exports = function (app) {
             html: 'Thanks for verifying your email',
           };
           return sendEmail(email);
-        case 'sendResetPwd':
-          console.log('user', user);
+        case 'sendResetPwd': {
+          // password successfully reset
           tokenLink = getLink('reset-password', user.resetToken);
+          const pwReset = pug.compileFile(
+            path.join(__dirname, 'templates', 'password-reset.pug')
+          );
           email = {
             from: FROM_EMAIL,
             to: user.email,
-            subject: 'Reset Password',
-            html: `<html><b>Reset Password</b>: ${tokenLink}</html>`,
+            subject: 'Reset Your Password',
+            html: pwReset({
+              firstname: user.firstname,
+              url: tokenLink,
+            }),
           };
           return sendEmail(email);
+        }
         case 'resetPwd':
           tokenLink = getLink('reset-password', user.resetToken);
           email = email = {
