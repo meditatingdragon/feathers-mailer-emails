@@ -1,21 +1,14 @@
-## Basic User Management and Roles System
+## Feathers Mailer - Extends User Roles and Management
 
 ### Background
 
-There's two primary types of MVP markets - B2C and B2B.
-
-This starter is aimed at B2B markets, including a user account creation workflow implementing [feathers-authentication-management](https://github.com/feathers-plus/feathers-authentication-management) library for [FeathersJS](https://feathersjs.com/) with AWS SES as the mailer and MongoDB as the datastore.
-
-The frontend is built with [Quasar](https://quasar.dev), a [Vue.js](https://vuejs.org) based component framework.
+This project demonstrates how to create beautiful transactional emails using Pug and Feathers Mailer. It extends the functionality of the [User Roles and Management Project](https://github.com/meditatingdragon/quasar-feathersjs-user-management), which is documented in [this article](https://dev.to/rachel_cheuk/intro-user-roles-and-management-with-quasar-feathersjs-mongodb-4hk5).
 
 ### Functionality
 
-- Register User
-- Login User
-- Update account
-- Reset/Forgot Password
-- Admin User Management (update profile/role, send password reset, deactivate user)
-- Logout
+- Template Emails Compiled with Pug
+- Insert variables into templates
+- Send emails
 
 ### Configuration
 
@@ -39,13 +32,9 @@ Client can be run with the Quasar CLI using `quasar dev`. Make sure to [install 
 
 Server can be run with node using `npm run dev`.
 
-### Contribute
-
-Feel free to improve and submit pull requests on this repo. Questions, comments and suggestions are also welcome. This is a starter repo I will be using for building out a MVP.
-
 #### Screenshots
 
-### Register
+### Confirm Email Template
 
 ![Register](./imgs/register.png)
 
