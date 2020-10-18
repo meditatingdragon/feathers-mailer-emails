@@ -2,7 +2,7 @@
 
 ### Background
 
-This project demonstrates how to create beautiful transactional emails using Pug and Feathers Mailer. It extends the functionality of the [User Roles and Management Project](https://github.com/meditatingdragon/quasar-feathersjs-user-management), which is documented in [this article](https://dev.to/rachel_cheuk/intro-user-roles-and-management-with-quasar-feathersjs-mongodb-4hk5).
+This project demonstrates how to create beautiful transactional emails using [Pug](https://pugjs.org/api/getting-started.html) and [Feathers Mailer](https://github.com/feathersjs-ecosystem/feathers-mailer). It extends the functionality of the [User Roles and Management Project](https://github.com/meditatingdragon/quasar-feathersjs-user-management), which is documented in [this article](https://dev.to/rachel_cheuk/intro-user-roles-and-management-with-quasar-feathersjs-mongodb-4hk5).
 
 ### Functionality
 
@@ -34,18 +34,6 @@ Server can be run with node using `npm run dev`.
 
 #### Screenshots
 
-### Confirm Email Template
+### Email
 
-![Register](./imgs/register.png)
-
-### Login
-
-![Login](./imgs/login.png)
-
-### Account
-
-![Account](./imgs/account.png)
-
-### Admin
-
-![Admin](./imgs/admin.png)
+![Email](./imgs/email.png)
