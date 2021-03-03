@@ -59,7 +59,7 @@
     "mongoose": "^5.9.25",
     "nodemailer-smtp-transport": "^2.7.4",
     "prettier": "^2.0.5",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "serve-favicon": "^2.5.0",
     "winston": "^3.3.3"
   },
